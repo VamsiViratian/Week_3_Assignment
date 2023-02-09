@@ -1,0 +1,67 @@
+public class Teacher 
+{
+	private String teacherName;
+	private String subject;
+	private double salary;
+	
+	Teacher(String teacherName,String subject,double salary)
+	{
+		this.teacherName=teacherName;
+		this.subject=subject;
+		this.salary=salary;
+	}
+
+	public String getTeacherName() {
+		return teacherName;
+	}
+
+	public void setTeacherName(String teacherName) {
+		this.teacherName = teacherName;
+	}
+
+	public String getSubject() {
+		return subject;
+	}
+
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+	
+	
+
+}
+
+public class Tester {
+
+	public static void main(String[] args) 
+	{
+		Teacher obj1=new Teacher("Alex","Java Fundamentals",12000.0);
+		System.out.println("NAME "+obj1.getTeacherName()+" SUBJECT "+obj1.getSubject()+" SALARY "+obj1.getSalary()+"L");
+		
+		System.out.println();
+		
+		Teacher obj2=new Teacher("John","RDBMS",800.0);
+		System.out.println("NAME "+obj2.getTeacherName()+" SUBJECT "+obj2.getSubject()+" SALARY "+obj2.getSalary()+"L");
+		
+		System.out.println();
+		
+		Teacher obj3=new Teacher("SAM","NETWORKING",900.0);
+		System.out.println("NAME "+obj3.getTeacherName()+" SUBJECT "+obj3.getSubject()+" SALARY "+obj3.getSalary()+"L");
+		
+		System.out.println();
+		
+		Teacher obj4=new Teacher("MARIA","PYTHON",900.0);
+		System.out.println("NAME "+obj4.getTeacherName()+" SUBJECT "+obj4.getSubject()+" SALARY "+obj4.getSalary()+"L");
+		
+
+	}
+
+}
